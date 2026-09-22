@@ -206,7 +206,7 @@ function and printing what comes back.
 
 From here, split the questions between you. Instead of alternating pushes, you
 will each work on your own **branch** at the same time. Read about the
-[git branching and PR process]([https://marcylabschool.gitbook.io/marcy-lab-school-docs/fullstack-curriculum/mod-0-command-line-interfaces-git-and-github/4-git-branching](https://marcylabschool.gitbook.io/swe/computational-thinking-and-responsible-use-of-ai/mod-0-command-line-interfaces-git-and-github/4-git-branching)
+[git branching and PR process](https://marcylabschool.gitbook.io/swe/computational-thinking-and-responsible-use-of-ai/mod-0-command-line-interfaces-git-and-github/4-git-branching)
 and try it here. You will each create a branch, open a pull request for your
 partner to review and merge, and then deal with merging those branches
 together. You got this.
