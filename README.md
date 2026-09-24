@@ -212,7 +212,9 @@ partner to review and merge, and then deal with merging those branches
 together. You got this.
 
 11. Write `print_time` that prints the current time as `HH:MM:SS`. Do not hard
-    code the hour, minute, or second. Look up the `datetime` module.
+    code the hour, minute, or second. The
+    [`datetime` module](https://www.w3schools.com/python/python_datetime.asp)
+    has what you need.
 
 12. Write `is_leap_year` that **returns** whether a year is a leap year in the
     Gregorian calendar.
