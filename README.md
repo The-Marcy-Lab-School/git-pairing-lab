@@ -53,21 +53,11 @@ You own every line either way, and you will be asked to explain it.
 
 ## Requirements
 
-You will work in pairs to write Python `print()` statements to tell a story! 
+You will work in pairs to write Python `print()` statements to tell a story!
 
 You can tell any story that you want (keep it appropriate for school/the workplace) but **your story must have at least 10 separate `print()` statements.**
 
-## Pair Programming
-
-You will work in a pair. Both partners look at the same screen, which creates
-two roles:
-
-- The **driver** types.
-- The **navigator** watches, checks the code, suggests improvements, and looks
-  things up to support the driver.
-
-Both roles matter, and people are often better at one than the other. Switch
-often.
+**Write your `print()` statements inside of `main.py`**.
 
 ## Instructions
 
@@ -82,14 +72,17 @@ Read all of these before you start.
    button.
 4. Both partners `git clone` the forked repo into `development/mod-0` using
    SSH.
-5. Partner A drives first. Partner A **types out** the first `print()` statement while
-   Partner B reviews and suggests. Then stage, commit, and push to `main`.
-6. Check the repo on GitHub to confirm the commit arrived.
-7. Now swap. Partner B runs `git pull` to get that commit, **types out** the
+5. Partner A drives first. Partner A **types out** the first `print()` in `main.py` while
+   Partner B reviews. Then
+     - stage: `git add -A`
+     - commit: `git commit -m "description of the change"`
+     - push: `git push`
+7. Check the repo on GitHub to confirm the commit arrived.
+8. Now swap. Partner B runs `git pull` to get that commit, **types out** the
    second function, and pushes.
-8. Keep swapping for *every* `print()` statement. Every push means your partner pulls before they
+9. Keep swapping for *every* `print()` statement. Every push means your partner pulls before they
    start.
-9. Your commit history should alternate between you
+10. Your commit history should alternate between you
 
 Run your code at any point with:
 
