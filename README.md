@@ -1,17 +1,6 @@
-# Intro to Git and Python Pairing Lab
+# Git Collaboration
 
-Get you and your partner comfortable with `git` by writing a story using the Python `print()` function
-together, one sentence at a time. You will also intentionally create a merge conflict and then resolve it.
-Finally, you will write a reflection together on using `git`.
-
-- [AI Use on This Assignment](#ai-use-on-this-assignment)
-- [Requirements](#requirements)
-- [Reflection Questions](#reflection-questions)
-- [Instructions](#instructions)
-- [Troubleshooting Tips](#troubleshooting-tips)
-- [Bonus](#bonus)
-
-This lab is about git, not Python. The interesting part is the workflow: how to
+This assignment is about git, not Python. The interesting part is the workflow: how to
 
 - Fork a repository
 - `git clone` a remote repository
@@ -23,6 +12,56 @@ This lab is about git, not Python. The interesting part is the workflow: how to
 Along the way, you will create merge conflicts on purpose. They are a great
 place to learn the foundations of working together in git, and it's better to
 meet your first one now than during a real deadline.
+
+Finally, you will write a reflection together on using `git`.
+
+**Table of Contents**:
+
+- [Setup](#setup)
+- [AI Use on This Assignment](#ai-use-on-this-assignment)
+- [Requirements](#requirements)
+- [Reflection Questions](#reflection-questions)
+- [Instructions](#instructions)
+- [Troubleshooting Tips](#troubleshooting-tips)
+- [Bonus](#bonus)
+
+
+## Setup
+
+This is a team assignment. Decide now who will be **Partner A** and who will be **Partner B** and stick to those roles for this assignment.
+
+1. **Partner A** forks this repository. Only one of you forks it. Partner B
+   does not fork anything.
+
+   ![Click the fork button and select your account to make your copy of the repository](how-to-fork.png)
+
+
+3. In the **forked** repository, Partner A adds Partner B as a collaborator so
+   both of you can push to it.
+   [Here is how you do that](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository).
+   Partner A shares the repo URL, and Partner B accepts the invitation on
+   GitHub. Check your email if you don't see a button pop up to accept the
+   invitation.
+4. **Both partners** `git clone` the forked repo onto your own computers into
+   `development/mod-0` using SSH.
+5. **Both partners** check that VS Code can be opened from the terminal:
+
+   ```sh
+   code --version
+   ```
+
+   If you see a version number, move on. If you see `command not found`, open
+   VS Code, open the Command Palette (`Cmd+Shift+P` on Mac, `Ctrl+Shift+P` on
+   Windows), run **Shell Command: Install 'code' command in PATH**, then close
+   and reopen your terminal and try again.
+6. **Both partners** run these two commands once. The first makes `git pull`
+   behave the way these instructions expect. The second makes git open VS Code
+   instead of Vim when it needs you to write a message.
+
+   ```sh
+   git config --global pull.rebase false
+   git config --global core.editor "code --wait"
+   ```
 
 ## AI Use on This Assignment
 
@@ -106,38 +145,7 @@ Read all of these before you start. There are four parts:
 3. **Write the story:** alternate `print()` statements until you have at least 10
 4. **Reflect:** answer the reflection questions together in one file
 
-### Part 1: Setup
-
-1. **Partner A** forks this repository. Only one of you forks it. Partner B
-   does not fork anything.
-2. In the **forked** repository, Partner A adds Partner B as a collaborator so
-   both of you can push to it.
-   [Here is how you do that](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository).
-   Partner A shares the repo URL, and Partner B accepts the invitation on
-   GitHub. Check your email if you don't see a button pop up to accept the
-   invitation.
-3. **Both partners** `git clone` the forked repo onto your own computers into
-   `development/mod-0` using SSH.
-4. **Both partners** check that VS Code can be opened from the terminal:
-
-   ```sh
-   code --version
-   ```
-
-   If you see a version number, move on. If you see `command not found`, open
-   VS Code, open the Command Palette (`Cmd+Shift+P` on Mac, `Ctrl+Shift+P` on
-   Windows), run **Shell Command: Install 'code' command in PATH**, then close
-   and reopen your terminal and try again.
-5. **Both partners** run these two commands once. The first makes `git pull`
-   behave the way these instructions expect. The second makes git open VS Code
-   instead of Vim when it needs you to write a message.
-
-   ```sh
-   git config --global pull.rebase false
-   git config --global core.editor "code --wait"
-   ```
-
-### Part 2: Warm-up
+### Part 1: Warm-up
 
 #### Round 0: A clean push and pull
 
@@ -240,7 +248,7 @@ Repeat Round 1 with these changes:
 before it. Your commit is still there. Run `git pull` again (step 7) and
 resolve the conflict from there. Nothing is broken.
 
-### Part 3: Write the story
+### Part 2: Write the story
 
 The three lines from the warm-up are the start of your story and count toward
 your 10 `print()` statements.
@@ -267,7 +275,7 @@ Run your code at any point with:
 python3 main.py
 ```
 
-### Part 4: Reflect
+### Part 3: Reflect
 
 You write **one** `REFLECTIONS.md` together. Working on one computer keeps the
 two of you from creating conflicts in this file.
